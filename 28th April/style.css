@@ -1,0 +1,15 @@
+.rgb{
+    color: rgb(255, 255, 255);
+    
+}
+.rgb{
+    background-color: rgba(0, 120, 0, 0.9);
+}
+
+#hex{
+    color: #081d0c76;
+}
+
+#hsl{
+    background-color: hsl(240, 50%, 0%);
+}

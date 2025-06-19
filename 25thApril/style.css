@@ -1,0 +1,50 @@
+.size{
+    font-size: 20px;
+    
+}
+.style{
+    font-style: italic;
+}
+
+.weight{
+    font-weight: bolder;
+}
+
+.family{
+    font-family: "Moon Dance", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#lineHeight{
+    line-height: 10px;
+}
+
+#color{
+     color: blue;
+     background-color: brown;
+     /* text-align: center;
+     text-decoration: line-through; */
+}
+
+#align{
+    text-align: end;
+    
+}
+
+#decoration{
+    text-decoration:overline;
+    text-decoration-color: red;
+    
+}
+
+#transform{
+    /* transform: rotate(40deg); */
+    /* transform: scale3d(2, 5); */
+    /* transform: skew(30deg); */
+    text-transform:capitalize;
+}
+
+#text-shadow{
+    text-shadow: 2px 2px 3px red;
+}

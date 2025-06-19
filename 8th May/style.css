@@ -1,0 +1,71 @@
+#container{
+    display: grid;
+    /* height: 800px; */
+    background-color: beige;
+    border: 2px solid black;
+
+    grid-template-rows: 100px 100px 100px 100px;
+    grid-template-columns: 100px 100px 100px;
+
+    /* grid-template-columns: repeat(2, 100px);
+    grid-template-rows:repeat(3, 100px); */
+
+    /* grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto; */
+
+    /* grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr; */
+
+    /* row-gap: 10px;
+    column-gap: 10px; */
+    gap: 10px 10px;
+
+    /* justify-content: center;
+    align-content: center; */
+
+    grid-template-areas: 
+    "header header header"
+    "sidebar content1 content1"
+    "sidebar content2 content3"
+    "footer footer footer";
+
+    grid-template-columns: repeat(auto-fill, minmax(500px,800px));
+}
+
+.item{
+    /* background-color: aqua; */
+    /* height: 60px; */
+    /* width: 60px; */
+    border: 2px solid black;
+    color: white;
+}
+
+#item1{
+background-color: blue;
+/* grid-column-start: 1;
+grid-column-end: 4; */
+
+grid-area: header;
+}
+
+#item2{
+    background-color: brown;
+    grid-area: sidebar;
+}
+#item3{
+    background-color: chartreuse;
+    grid-area: content1;
+}
+
+#item4{
+    background-color: crimson;
+    grid-area: content2;
+}
+#item5{
+    background-color: coral;
+    grid-area: content3;
+}
+#item6{
+    background-color: green;
+    grid-area: footer;
+}

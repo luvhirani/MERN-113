@@ -5,7 +5,9 @@ document.getElementById("search-button").addEventListener("click", function(){
     weatherData.then((data)=>{
         console.log(data)
         document.getElementById("city-name").innerText = data.name;
-        document.getElementById("current-temp").innerHTML = 
+        document.getElementById("current-temp").innerHTML = `${data.main.temp}<sup style="font-size: 40px; position: relative; bottom: 20px;">o</sup>C`;
+        document.getElementById("min-max-temp").innerHTML = `${data.main.temp_max}<sup style="font-size: 10px; position: relative; bottom: 10px;">o</sup>C/${data.main.temp_min}<sup style="font-size: 10px; position: relative; bottom: 10px;">o</sup>C`;
+        document.getElementById("weather-icon").src = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`
     })
 
 })

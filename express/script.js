@@ -14,7 +14,7 @@ app.use("/user", userRoutes)
 
 app.use('/products', productRoutes)
 
-
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })
+
